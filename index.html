@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network Engineer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    header p {
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1f2937;
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin: 5px;
+      font-size: 0.85rem;
+    }
+
+    .job {
+      margin-bottom: 20px;
+    }
+
+    .job h3 {
+      font-size: 1.1rem;
+    }
+
+    .job span {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    ul {
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: 1fr 2fr;
+      }
+      header {
+        grid-column: span 2;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        grid-template-columns: 300px 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <h1>Network Systems Professional</h1>
+  <p>Senior Network Administrator • 15+ Years in Infrastructure • Retail & Enterprise Networks</p>
+</header>
+
+<aside class="card">
+  <h2>Contact</h2>
+  <p>Phone: 514 806 7081</p>
+  <p>Location: Montreal, Canada</p>
+
+  <h2 style="margin-top:20px;">Core Skills</h2>
+  <div class="skills">
+    <span>Cisco IOS / IOS-XE</span>
+	<span>Routing, Switching, VPN Tunneling</span>
+    <span>Meraki SD-WAN</span>
+    <span>DMVPN</span>
+    <span>Viptela SD-WAN</span>
+    <span>Aruba CX</span>
+    <span>NX-OS / Nexus</span>
+    <span>Linux</span>
+    <span>Python</span>
+    <span>AWS Networking</span>
+    <span>Docker / Git</span>
+    <span>ServiceNow / JIRA</span>
+  </div>
+
+  <h2 style="margin-top:20px;">Education</h2>
+  <p>CCNP (Routing, Switching, Security)</p>
+  <p>ITIL v3</p>
+  <p>DEA – Electrical & Telecom Engineering</p>
+</aside>
+
+<main class="grid">
+
+<section class="card">
+  <h2>Professional Summary</h2>
+  <p>
+    Technically oriented business systems professional with 15+ years of experience in IT network infrastructure and over 10 years specializing in retail network environments. Proven ability to deploy large-scale SD-WAN solutions, optimize network performance, and enhance operational efficiency across thousands of distributed sites.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Experience</h2>
+
+  <div class="job">
+    <h3>Senior Network Administrator — TCS</h3>
+    <span>Jan 2023 - Present</span>
+    <ul>
+      <li>Deploying Cisco Meraki cloud solutions across 1700+ retail locations</li>
+      <li>Planning, deploying, and supporting new network sites and services</li>
+      <li>Coordinating bulk patch deployments with engineering teams</li>
+      <li>Managing IP address space and network inventory</li>
+      <li>Training new technical staff</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Senior Network Analyst — ATOS</h3>
+    <span>Nov 2019 - 2023</span>
+    <ul>
+      <li>Managed pharmacy network services across 1500+ sites</li>
+      <li>Configured and supported Meraki-based infrastructure</li>
+      <li>Resolved tickets and handled deployments</li>
+      <li>Managed projects and updates in JIRA</li>
+      <li>Handled WiFi, security systems, IVR, and network services</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Network Analyst — McKesson Canada</h3>
+    <span>May 2013 - Oct 2019</span>
+    <ul>
+      <li>Managed 1200+ Cisco DMVPN-connected sites</li>
+      <li>Maintained router configurations and IOS updates</li>
+      <li>Resolved network incidents and service requests</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Network Specialist — SITA</h3>
+    <span>Feb 2009 - Jun 2012</span>
+    <ul>
+      <li>Provided support for global airline network systems</li>
+      <li>Worked on Cisco routers, ASA firewalls, and wireless systems</li>
+      <li>Handled multi-vendor environments (Juniper, Nortel, Alcatel)</li>
+      <li>Performed incident management using Trillium platform</li>
+    </ul>
+  </div>
+
+</section>
+
+<section class="card">
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>2025:</strong> Upgrading 800 Meraki routers (MX65 → MX68)</li>
+    <li><strong>2025:</strong> Upgraded 150 access points to latest standard</li>
+    <li><strong>2017:</strong> Migrated 1200 Cisco routers (DMVPN → Meraki AutoVPN)</li>
+  </ul>
+</section>
+
+</main>
+
+<div style="text-align:center; margin-top:20px;">
+  <button onclick="downloadPDF()" style="padding:12px 20px; background:#2563eb; color:white; border:none; border-radius:8px; cursor:pointer; font-weight:600;">
+    Download CV (PDF)
+  </button>
+</div>
+
+<footer>
+  <p>© 2026 Network Portfolio</p>
+</footer>
+
+</div>
+
+<script>
+function downloadPDF() {
+  window.print();
+}
+</script>
+
+</body>
+</html>
